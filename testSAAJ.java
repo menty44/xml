@@ -44,15 +44,21 @@ public class testSAAJ {
 
         /*
         Constructed SOAP Request Message:
-        <SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:example="http://ws.cdyne.com/">
-            <SOAP-ENV:Header/>
-            <SOAP-ENV:Body>
-                <example:VerifyEmail>
-                    <example:email>mutantninja@gmail.com</example:email>
-                    <example:LicenseKey>123</example:LicenseKey>
-                </example:VerifyEmail>
-            </SOAP-ENV:Body>
-        </SOAP-ENV:Envelope>
+        <?xml version="1.0" encoding="UTF-8"?>
+            <SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:type="https://neosurf.info/soap/">
+               <SOAP-ENV:Header />
+               <SOAP-ENV:Body>
+                  <get_dtickets>
+                     <currency>EUR</currency>
+                     <hash>819ea5abae576f5a62f1407468d5f162869b848a</hash>
+                     <type:IDProduct xsi:type="xsd:int">14</type:IDProduct>
+                     <IDReseller>impalapay.reseller.test@neosurf.com+soked3dpme</IDReseller>
+                     <IDTransaction>TRX002</IDTransaction>
+                     <type:IDUser xsi:type="xsd:int">225</type:IDUser>
+                     <type:quantity xsi:type="xsd:int">1</type:quantity>
+                  </get_dtickets>
+               </SOAP-ENV:Body>
+            </SOAP-ENV:Envelope>
          */
 
         // SOAP Body
